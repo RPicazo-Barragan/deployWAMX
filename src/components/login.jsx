@@ -1,4 +1,4 @@
-import styles from "../../styles/login.module.css";
+import styles from "../../styles/login.module.scss";
 import { Button, Row, Col, Form, Input } from "antd";
 import Link from "next/link";
 
