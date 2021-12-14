@@ -1,0 +1,97 @@
+.imagewrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.imagewrap img {
+  margin: 1rem 0 1rem 2rem;
+  width: 300px;
+  height: 80px;
+}
+
+.tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tittle h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #001529;
+  margin: 1rem 0 0 0;
+}
+
+.super {
+  -webkit-box-shadow: 2px 2px 2px 1px lightgray;
+          box-shadow: 2px 2px 2px 1px lightgray;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 2px 1px lightgray;
+          box-shadow: 2px 2px 2px 1px lightgray;
+  width: 400px;
+  height: 350px;
+}
+
+.formwrapper h2 {
+  font-size: 2rem;
+  color: #001529;
+}
+
+.formwrapper Input {
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+.formwrapper .InputPers {
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+.formwrapper .btn {
+  background-color: #001529;
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=login.module.css.map */
