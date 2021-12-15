@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, Button,Input } from "antd";
 import styles from "../../styles/modal.module.css";
-import Link from "next/link";
+
 
 class Modales extends React.Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class Modales extends React.Component {
   }
 
   render() {
-    const { title, text, visible, onOk,id } = this.props;
+    const { title, text, visible, onOk,id,key } = this.props;
     return (
       <div>
         <Modal
