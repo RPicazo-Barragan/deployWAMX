@@ -149,4 +149,4 @@ function ScanStation() {
   );
 }
 
-export default scanStation;
+export default ScanStation;
