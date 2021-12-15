@@ -6,7 +6,7 @@ import React, { useState, useRef } from "react";
 const { Option } = Select;
 import Navbar from "./navBar.jsx";
 
-function scanStation() {
+function ScanStation() {
   const [contPar, setcontPar] = useState(0);
   const [contTotal, setcontTotal] = useState(0);
   const [visible, setVisible] = useState(false);
