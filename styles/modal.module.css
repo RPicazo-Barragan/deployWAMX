@@ -1,0 +1,34 @@
+.modales div {
+    border-radius: 10px;
+    background: #2b2d42;
+    font-weight: bold;
+    color: white;
+    border: none;
+    text-align: center;
+  }
+  .modales svg path {
+    fill: white;
+  }
+
+  .input{
+    margin: 1rem;
+  }
+  
+  .button {
+    margin-top: 1rem;
+    background: #df928e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: all linear 0.35s;
+  }
+  .button:hover span {
+    transition: all linear 0.35s;
+  }
+  
+  .button:hover {
+    background: white;
+    color: #df928e;
+    border: #df928e;
+  }
