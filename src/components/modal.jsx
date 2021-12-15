@@ -24,7 +24,7 @@ class Modales extends React.Component {
               
             </Input>,
               <Button
-                key="submit"
+                key={key}
                 type="primary"
                 onClick={onOk}
                 className={styles.button}
