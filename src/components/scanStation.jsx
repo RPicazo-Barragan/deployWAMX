@@ -143,6 +143,7 @@ function ScanStation() {
           id="modalInput"
           title="Rack Completo"
           text="Por favor escanea la etiqueta de notificación para continuar"
+          key="submit"
         ></Modales>
       </Row>
     </>

@@ -16,13 +16,16 @@ class Modales extends React.Component {
           className={styles.modales}
           visible={visible}
           onOk={onOk}
-          footer={[
-            <Input
+        >
+          <p className={styles.text}>{title}</p>
+          <p className={styles.text}>{text}</p>
+
+          <Input
             className = "styles.input"
             id= {id}
             >
               
-            </Input>,
+            </Input>
               <Button
                 key={key}
                 type="primary"
@@ -31,10 +34,6 @@ class Modales extends React.Component {
               >
                GUARDAR
               </Button>
-          ]}
-        >
-          <p className={styles.text}>{title}</p>
-          <p className={styles.text}>{text}</p>
         </Modal>
       </div>
     );
