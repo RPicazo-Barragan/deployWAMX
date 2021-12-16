@@ -9,7 +9,7 @@ class Modales extends React.Component {
   }
 
   render() {
-    const { title, text, visible, onOk,id,key } = this.props;
+    const { title, text, visible, onOk,id } = this.props;
     return (
       <div>
         <Modal
@@ -27,7 +27,6 @@ class Modales extends React.Component {
               
             </Input>
               <Button
-                key={key}
                 type="primary"
                 onClick={onOk}
                 className={styles.button}
