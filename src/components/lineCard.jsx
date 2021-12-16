@@ -34,7 +34,7 @@ function LineCard() {
 
                     </div>
                     <div>
-                        <h2 className={styles.lookgood} >Production:US version</h2>
+                        <h2 className={styles.lookgood} >Production:ECE version</h2>
                     </div>
 
                 </Col>
