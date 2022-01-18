@@ -1,7 +1,8 @@
 import styles from "../../styles/scanStation.module.scss";
 import { Button, Row, Col, Form, Input, InputNumber, Select } from "antd";
-import Modales from "../components/modal";
+import Modal from "../components/Modal"
 import LineCard from "./lineCard";
+import ErrorCard from "./errorCard";
 import React, { useState, useRef } from "react";
 const { Option } = Select;
 import Navbar from "./navBar.jsx";
@@ -9,28 +10,20 @@ import Navbar from "./navBar.jsx";
 function ScanStation() {
   const [contPar, setcontPar] = useState(0);
   const [contTotal, setcontTotal] = useState(0);
-  const [visible, setVisible] = useState(false);
   const [show, setShow] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const handleEnter = (name) => {
-    console.log(contPar);
-    console.log(contTotal);
     const { lectura } = name;
     console.log("Has presionado enter", lectura);
     setcontPar(contPar + 1);
     setcontTotal(contTotal + 1);
     if (contPar == 17) {
       setcontPar(0);
-      setVisible(true);
+      setShowModal(true);
     }
     document.getElementById("scanner").value = " ";
   };
-
-  const handleModalButton = () => {
-    setVisible(false);
-    document.getElementById("modalInput").value = " ";
-  };
-
   return (
     <>
       <Navbar />
@@ -137,15 +130,15 @@ function ScanStation() {
             <h2 className={styles.counter}>{contTotal}</h2>
           </Form>
         </Col>
-        <Modales
-          visible={visible}
-          onOk={handleModalButton}
-          id="modalInput"
-          title="Rack Completo"
-          text="Por favor escanea la etiqueta de notificación para continuar"
-          key="submit"
-        ></Modales>
       </Row>
+         <div id="modal-root">
+        <Modal
+          onClose={() => setShowModal(false)}
+          show={showModal}>
+          <ErrorCard/>
+        </Modal>
+        </div>
+     
     </>
   );
 }
